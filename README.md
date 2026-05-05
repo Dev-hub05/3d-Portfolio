@@ -1,176 +1,100 @@
-# 3D Portfolio Website
+<div align="center">
+  <img src="public/images/preview1.png" alt="Portfolio Banner" width="100%" />
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+  # 🚀 Satdev's 3D Interactive Portfolio
+  
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.dot.js&logoColor=white)](https://threejs.org/)
+  [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://gsap.com/)
+  [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
+  <p align="center">
+    A high-performance, visually stunning 3D portfolio showcasing the journey of a <b>Backend & Web Developer</b>.
+    <br />
+    <a href="https://portfolio-3d-omega-ten.vercel.app"><strong>View Live Demo »</strong></a>
+  </p>
+</div>
 
-![Portfolio Preview](public/images/preview1.png)
+---
 
-## Table of Contents
+## ✨ Overview
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [GSAP License Note](#gsap-license-note)
-- [Customization Guide](#customization-guide)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-- [License](#license)
+This project is a state-of-the-art personal portfolio built for **Satdev**, a Computer Science student specializing in Backend Development and AI Architecture. It leverages **Three.js** and **GSAP** to create an immersive, interactive experience that pushes the boundaries of modern web design.
 
-## Features
+### 🌟 Key Features
+- **3D Immersive Environment:** Powered by React Three Fiber and Three.js with an interactive AI character.
+- **Dynamic Hero Section:** Sophisticated GSAP text animations alternating between professional titles.
+- **Glassmorphism UI:** Premium Navbar design with semi-transparent blur effects and smooth transitions.
+- **Interactive "What I Do":** Custom cards detailing Full-Stack and AI expertise with flickering digital effects.
+- **Chronological Career Path:** A sleek, vertical timeline of major academic and professional projects.
+- **Performance Optimized:** Rapid loading screen with failsafe mechanisms and smooth scroll orchestration.
 
-- Responsive one-page portfolio layout with reusable section components.
-- 3D character scene rendering powered by React Three Fiber and Three.js.
-- GSAP-powered animations and transitions for interactive storytelling.
-- Custom cursor, hover interactions, and scroll-driven visual effects.
-- Organized component architecture with dedicated utilities and style modules.
+---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-### Core
+| Category | Tools |
+| :--- | :--- |
+| **Frontend** | React 18, TypeScript, Vite |
+| **Animation** | GSAP, ScrollTrigger, SplitText |
+| **3D Rendering** | Three.js, @react-three/fiber, @react-three/drei |
+| **Styling** | Vanilla CSS (Premium Design System) |
+| **Deployment** | Vercel |
 
-- React 18
-- TypeScript
-- Vite
+---
 
-### Animation and 3D
+## 📂 Project Structure
 
-- GSAP + `@gsap/react`
-- Three.js
-- `@react-three/fiber`
-- `@react-three/drei`
-- `@react-three/postprocessing`
-- `@react-three/cannon`
-- `@react-three/rapier`
-
-### Supporting Libraries
-
-- `react-icons`
-- `react-fast-marquee`
-- `@vercel/analytics`
-
-## Project Structure
-
-```text
-.
-├── public/                    # Static assets
-├── src/
-│   ├── assets/                # Local media/assets
-│   ├── components/
-│   │   ├── Character/         # 3D scene + character logic/utilities
-│   │   ├── styles/            # Section/component CSS files
-│   │   ├── About.tsx
-│   │   ├── Career.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Landing.tsx
-│   │   ├── MainContainer.tsx  # Main page composition
-│   │   ├── Navbar.tsx
-│   │   ├── TechStack.tsx
-│   │   ├── WhatIDo.tsx
-│   │   └── Work.tsx
-│   ├── context/               # Global providers (loading state, etc.)
-│   ├── data/                  # Static data/content definitions
-│   ├── App.tsx
-│   └── main.tsx
-├── package.json
-└── vite.config.ts
+```bash
+src/
+├── components/
+│   ├── Character/      # 3D Scene & Character Logic
+│   ├── styles/         # Section-specific Premium Styles
+│   ├── About.tsx       # Profile Section
+│   ├── Career.tsx      # Project Timeline
+│   ├── Contact.tsx     # Contact & Hyperlinks
+│   ├── Landing.tsx     # Hero Section with Animations
+│   └── WhatIDo.tsx     # Skill Showcase
+├── utils/              # GSAP & Scroll Orchestration
+└── context/            # Global State Management
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## 🚀 Getting Started
 
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
-
-### Installation
-
-1. Clone the repository:
-
+1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
-   cd 3d-portfolio
+   git clone https://github.com/Dev-hub05/Personal-Portfolio.git
    ```
 
-2. Install dependencies:
-
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. Start the local development server:
-
+3. **Run development server**
    ```bash
    npm run dev
    ```
 
-4. Open the URL shown in the terminal (typically `http://localhost:5173`).
-
-## Available Scripts
-
-- `npm run dev`  
-  Starts Vite dev server and exposes host for local network testing.
-
-- `npm run build`  
-  Type-checks and builds a production-ready bundle.
-
-- `npm run preview`  
-  Serves the production build locally for verification.
-
-- `npm run lint`  
-  Runs ESLint checks across the project.
-
-## GSAP License Note
-
-This project uses the standard `gsap` package, including bonus plugins now available in the core package.
-
-- Install dependencies with `npm install`.
-- If migrating from older setups, remove `gsap-trial` from your project.
-
-Read official installation guidance here: [GSAP Installation Docs](https://gsap.com/docs/v3/Installation/)
-
-## Customization Guide
-
-You can adapt this portfolio to your own profile by updating the following areas:
-
-- **Content sections**: Edit files in `src/components/` such as `About.tsx`, `Career.tsx`, `WhatIDo.tsx`, and `Work.tsx`.
-- **Data source**: Update static values in files under `src/data/`.
-- **Styling**: Modify component styles in `src/components/styles/` and global styles in `src/index.css` / `src/App.css`.
-- **3D scene behavior**: Adjust scene logic in `src/components/Character/` and related utilities.
-- **Animations**: Tweak GSAP utilities under `src/components/utils/`.
-
-## Troubleshooting
-
-- **Blank screen in development**  
-  Check browser console for module import errors and verify all dependencies are installed.
-
-- **3D performance issues on low-end devices**  
-  Reduce scene complexity and post-processing effects in the character/scene utilities.
-
-- **GSAP plugin errors**  
-  Ensure you have the correct plugin package and license configuration for your target environment.
-
-- **TypeScript build failures**  
-  Run `npm run build` and address reported type errors before deploying.
-
-## Deployment
-
-1. Create a production build:
-
+4. **Build for production**
    ```bash
    npm run build
    ```
 
-2. Validate locally:
+---
 
-   ```bash
-   npm run preview
-   ```
+## 🤝 Contact
 
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
+**Satdev Sharma**  
+📧 [devsharma96363@gmail.com](mailto:devsharma96363@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/satdev-sharma-50265b2b3/)  
+💻 [GitHub](https://github.com/Dev-hub05)
 
-## License
+---
 
-This project is open source and available under the [MIT License](LICENSE).
+<div align="center">
+  <sub>Built with ❤️ by Antigravity AI for Satdev</sub>
+</div>
