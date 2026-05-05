@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="public/images/preview1.png" alt="Portfolio Banner" width="100%" />
 
   # 🚀 Satdev's 3D Interactive Portfolio
   
